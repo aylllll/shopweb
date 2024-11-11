@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+    <div class="nav">
+        <a href="index.html" class="backindex">返回主页</a>
+        <span class="usermoney"></span>
+        <button class="order">历史订单</button>
+        <div class="cart"><img src="./images/cart.jpg"> 购物车</div>
+    </div>
+    <div class="cartbox">
+        <div class="carthead">
+            <div class="selectAll"><input type="checkbox"></div>
+            <div class="proImg">商品图片</div>
+            <div class="proPame">商品名</div>
+            <div class="proPrice">价格</div>
+            <div class="add-reduce">数量</div>
+            <div class="countMoney">小计</div>
+            <div class="delete"><span>删除</span></div>
+        </div>
+        <div class="cartbody">
+        </div>
+
+        <div class="buybox">
+            <div class="buyhead">结算</div>
+            <div class="buybody">
+                <div>已选：<span id="selectcount">0</span>件</div>
+                <div>总计：<span id="totalmoney">0</span></div>
+            </div>
+            <button class="buyfoot">购买</button>
+            <div></div>
+        </div>
+    </div>
+
+
+</body>
+<script src="Allfunction.js"></script>
+<script>cartfunction()</script>
+
+</html>

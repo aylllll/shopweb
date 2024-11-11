@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="./register.css">
+</head>
+
+<body>
+
+    <div class="login">
+        <div class="nav">
+            <span>用户注册</span>
+
+        </div>
+        <div class="body">
+            <div>
+                <input type="text" class="inputname" placeholder="输入昵称" oninput="nameInput()"
+                    onblur="nameInput()"></input>
+                <span class="error nameError"></span>
+            </div>
+            <div>
+                <input type="text" class="inputemail" placeholder="输入QQ邮箱" oninput="EmailInput()"
+                    onblur="EmailInput()"></input>
+                <span class="error emailError"></span>
+
+            </div>
+            <div>
+                <input type="password" class="inputpwd" placeholder="输入密码" oninput="PasswordInput()"
+                    onblur="PasswordInput()"></input>
+                <span class="error passwordError"></span>
+
+            </div>
+            <div>
+                <input type="password" class="inputpwd again" placeholder="再次输入密码" oninput="ConfirmPasswordInput()"
+                    onblur="ConfirmPasswordInput()"></input>
+                <span class="error confirmPasswordError"></span>
+
+            </div>
+            <div>
+                <input type="text" class="inputcode" placeholder="输入验证码"></input>
+                <span class="error codeError"></span>
+
+            </div>
+            <button class="sendcode" onclick="sendCode(this)">发送验证码</button>
+            <button class="loginbutton" onclick="submitForm(event)">注册</button>
+        </div>
+        <div class="foot">
+            <a href="login.html" class="managerlogin">用户登录 | </a>
+            <a href="index.html" class="backindex">返回主页</a>
+        </div>
+    </div>
+</body>
+<script src="Allfunction.js"></script>
+<script></script>
+
+</html>

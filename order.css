@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 1000;
+    top: 0;
+    /* 距离页面顶部0像素 */
+    left: 0;
+    /* 距离页面左侧0像素 */
+}
+
+.nav .backindex {
+    border: 0;
+    float: left;
+    margin: 10px 5px;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: black;
+    transition: color.3s;
+}
+
+.nav .logout,
+.cart,
+.order {
+    text-align: center;
+    border: 0;
+    float: right;
+    margin: 10px 5px;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: black;
+    transition: color.3s;
+}
+
+.nav .cart img {
+    height: 20px;
+}
+
+
+.nav .backindex:hover {
+    color: orange;
+}
+
+.nav .logout:hover {
+    color: orange;
+}
+
+.nav .cart:hover {
+    color: orange;
+}
+
+
+.orderbody .delete span {
+    cursor: pointer;
+}
+
+.orderbox {
+    margin: 0 auto;
+    width: 1650px;
+}
+
+.carthead {
+    background-color: #f5f5f5;
+    width: 100%;
+    margin: 100px 0 0 0;
+    height: 50px;
+
+}
+
+.carthead div {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 200px;
+    float: left;
+    border-bottom: 2px solid rgba(243, 238, 238, 0.919);
+}
+
+.carthead .time {
+    width: 250px;
+}
+
+.carthead div.selectAll {
+    width: 40px;
+}
+
+.orderbody {
+    float: left;
+    width: 100%;
+    background-color: white;
+}
+
+.orderbody .product {
+    width: 100%;
+    height: 212px;
+    transition: box-shadow.3s;
+}
+
+.orderbody .product:hover {
+    box-shadow: 0 0 4px 4px #7ee5fa;
+}
+
+.orderbody .product div {
+    margin: 5px 0 5px 0;
+    height: 200px;
+    border-bottom: 2px solid rgba(243, 238, 238, 0.919);
+    float: left;
+}
+
+
+.orderbody .product .time {
+    width: 250px;
+    text-align: center;
+    line-height: 200px;
+
+}
+
+.orderbody .product .time .buytime {
+    font-weight: 700;
+    margin: 20px 25px;
+    border: 0;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.orderbody .product .time .buynumber {
+    margin: 10px 25px;
+    border: 0;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+}
+
+
+.orderbody .product .select input {
+    width: 30px;
+}
+
+.orderbody .product .proImg {
+    width: 200px;
+}
+
+.orderbody .product .proImg img {
+    padding: 2.5px 0 0 2.5px;
+    border-radius: 20px;
+    height: 190px;
+}
+
+.orderbody .product .proPame,
+.status,
+.proPrice,
+.add-reduce,
+.countMoney {
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+}
+
+
+.orderbody .product .add-reduce div {
+    border: 2px solid rgba(243, 238, 238, 0.919);
+    border-radius: 14px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+.orderbody .product .add-reduce .proCount {
+    width: 70px;
+    margin: 85px 0px 0 0px;
+}
+
+
+.orderbody .product .delete {
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+}
+
+.orderbody .product .delete span:hover {
+    color: red;
+}
+
+.buybox {
+    border: 2px solid rgba(243, 238, 238, 0.919);
+    border-radius: 30px;
+    float: left;
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.buybox .buyhead {
+    padding: 20px 0 0 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.buybox .buybody {
+    padding: 40px 0 0 20px;
+    width: 100%;
+    height: 150px;
+    font-size: 30px;
+    line-height: 50px;
+
+}
+
+.buybox .buyfoot {
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    margin: 0px 50px;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 700;
+    background-color: #ff5000;
+}
+
+.orderbody .product .add-reduce .proCountOrder {
+    width: 70px;
+    margin: 85px 60px;
+}

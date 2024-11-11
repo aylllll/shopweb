@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+.nav .login,
+.freeregister,
+.username,
+.usermoney,
+.updatepro,
+.updateuser {
+    border: 0;
+    float: left;
+    margin: 10px 5px;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: black;
+    transition: color.3s;
+}
+
+.nav .logout,
+.cart,
+.order {
+    text-align: center;
+    border: 0;
+    float: right;
+    margin: 10px 5px;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: black;
+    transition: color.3s;
+}
+
+.nav .cart img {
+    height: 20px;
+}
+
+
+.nav .freeregister:hover,
+.nav .updatepro:hover,
+.nav .logout:hover,
+.nav .cart:hover,
+.nav .order:hover,
+.nav .login:hover,
+.nav .updateuser:hover {
+    color: orange;
+}
+
+
+.productbox {
+    border-radius: 20px;
+    margin: 70px auto 100px;
+    width: 1090px;
+    height: 950px;
+    background-color: #f5f5f5;
+}
+
+.productbox .product {
+    border-radius: 20px;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    float: left;
+    width: 350px;
+    height: 470px;
+    background-color: #f5f5f5;
+    transition: box-shadow.3s;
+}
+
+.productbox .product div {
+    height: 30px;
+}
+
+.productbox .product img {
+    transition: box-shadow.3s;
+    border-radius: 20px;
+    width: 100%;
+    height: 350px;
+}
+
+.productbox .product .proName {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.productbox .product .addcart {
+    border-radius: 20px;
+    border: 0;
+    position: absolute;
+    bottom: 10px;
+    right: 75px;
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    background-color: orange;
+    transition: background-color.3s;
+}
+
+.productbox .product .addcart:hover {
+    background-color: rgb(242, 121, 8);
+}
+
+.productbox .product:hover {
+    box-shadow: 0 0 8px 8px #525151;
+}
+
+.productbox .product img:hover {
+    box-shadow: 0 0 8px 8px #525151;
+}
+
+
+.productbox #pro-1 {
+    margin: 0 20px 10px 0;
+}
+
+.productbox #pro-2 {
+    margin: 0 20px 10px 0;
+}
+
+.productbox #pro-3 {
+    margin: 0 0 10px 0;
+}
+
+.productbox #pro-4 {
+    margin: 0 20px 0 0;
+}
+
+.productbox #pro-5 {
+    margin: 0 20px 0 0;
+}
+
+.productbox #pro-6 {
+    margin: 0 0 0 0;
+}
+
+.productbox .product .proupdate {
+    line-height: 40px;
+    width: 100%;
+    height: 40px;
+}
+
+.productbox .product .proupdate button {
+    font-size: 16px;
+    font-weight: 700;
+    width: 100px;
+    height: 35px;
+    margin: 0 5px;
+    border: 0;
+    border-radius: 15px;
+    background-color: orange;
+    transition: background-color.3s;
+}
+
+.productbox .product .proupdate button:hover {
+    background-color: #f27908;
+}
+
+.productbox input {
+    width: 120px;
+    height: 20px;
+    padding: 2px 2px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.productbox input:focus {
+    border-color: #007bff;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+
+.usermanagement {
+    padding: 10px 0;
+    margin: 0 auto 100px;
+    width: 1600px;
+    height: 800px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.usermanagement .Mnav {
+    padding: 0 10px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+    background-color: #f0f0f0;
+    margin: 0px 20px;
+    width: 1560px;
+    height: 60px;
+    border-bottom: 4px solid black
+}
+
+.usermanagement .Mnav button {
+    margin: 11px 5px;
+    float: right;
+    border: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.usermanagement .Mnav .searchUserinput {
+    border: 2px solid #ccc;
+    font-size: 20px;
+    float: right;
+    margin: 7px 5px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    width: 280px;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.usermanagement .Mnav .searchUserinput:focus {
+    border-color: #07faad;
+    box-shadow: 0 0 2px 2px #07a271;
+}
+
+.usermanagement .Mbody {
+    margin: 5px 20px;
+}
+
+.usermanagement .Mbody .Mbody-nav {
+    width: 1480px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin: 6px 0 20px 5px;
+    background-color: white;
+    height: 80px;
+}
+
+.usermanagement .Mbody .Mbody-body {
+
+    height: 600px;
+    overflow-y: auto;
+    border-bottom: 4px solid black;
+}
+
+.usermanagement .Mbody .Mbody-body .user {
+    margin: 6px 0 8px 5px;
+    width: 1480px;
+    border-radius: 20px;
+    background-color: white;
+    height: 80px;
+    transition: box-shadow.3s;
+}
+
+.usermanagement .Mbody .Mbody-body .user:hover {
+    box-shadow: 0 0 4px 4px #07faad;
+
+}
+
+.usermanagement .Mbody .Mbody-nav div,
+.Mbody-body .user div {
+    margin: 0 2px 0 0;
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    background-color: #fff;
+}
+
+.usermanagement .Mbody .Mbody-nav .number {
+    border-radius: 20px;
+    margin: 0px 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+}
+
+.usermanagement .Mbody .Mbody-body .user .number {
+    border-radius: 4px;
+    margin: 0px 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+}
+
+.usermanagement .Mbody .Mbody-nav .email,
+.name,
+.Mbody-body .user .email {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 410px;
+}
+
+.usermanagement .Mbody .Mbody-nav .name,
+.Mbody-body .user .name {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 310px;
+}
+
+.usermanagement .Mbody .Mbody-nav .pwd,
+.Mbody-body .user .pwd {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 310px;
+}
+
+.usermanagement .Mbody .Mbody-nav .money,
+.Mbody-body .user .money {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 210px;
+}
+
+.usermanagement .Mbody .Mbody-nav .update,
+.Mbody-body .user .update {
+    border-radius: 20px;
+    height: 80px;
+    line-height: 80px;
+    border: 0;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 5px 0;
+    width: 100px;
+    transition: color.3s;
+}
+
+.usermanagement .Mbody .Mbody-body .user .update:hover {
+    color: orange;
+}
+
+.usermanagement .Mbody .Mbody-body .user input {
+    border: 2px solid #ccc;
+    font-size: 20px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    width: 180px;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.usermanagement .Mbody .Mbody-body .user input:focus {
+    border-color: #07faad;
+    box-shadow: 0 0 2px 2px #07a271;
+}
+
+
+.ordermanagement {
+    padding: 10px 0;
+    margin: 0 auto 100px;
+    width: 1600px;
+    height: 800px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.ordermanagement .Onav {
+    padding: 0 10px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+    background-color: #f0f0f0;
+    margin: 0px 20px;
+    width: 1560px;
+    height: 60px;
+    border-bottom: 4px solid black
+}
+
+.ordermanagement .Onav button {
+    margin: 11px 5px;
+    float: right;
+    border: 0;
+    width: 40px;
+    height: 40px;
+}
+
+.ordermanagement .Onav .searchUserinput {
+    border: 2px solid #ccc;
+    font-size: 20px;
+    float: right;
+    margin: 7px 5px;
+    padding: 2px 5px;
+    border-radius: 10px;
+    width: 280px;
+    height: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.ordermanagement .Onav .searchUserinput:focus {
+    border-color: #07faad;
+    box-shadow: 0 0 2px 2px #07a271;
+}
+
+.ordermanagement .Obody {
+    margin: 5px 20px;
+}
+
+.ordermanagement .Obody .Obody-nav {
+    width: 1480px;
+    border-radius: 20px;
+    font-weight: 700;
+    margin: 6px 0 20px 5px;
+    background-color: white;
+    height: 80px;
+}
+
+.ordermanagement .Obody .Obody-body {
+
+    height: 600px;
+    overflow-y: auto;
+    border-bottom: 4px solid black;
+}
+
+.ordermanagement .Obody .Obody-body .Morder {
+    margin: 6px 0 8px 5px;
+    width: 1480px;
+    border-radius: 20px;
+    background-color: white;
+    height: 80px;
+    transition: box-shadow.3s;
+}
+
+.ordermanagement .Obody .Obody-body .Morder:hover {
+    box-shadow: 0 0 4px 4px #07faad;
+
+}
+
+.ordermanagement .Obody .Obody-nav div,
+.Obody-body .Morder div {
+    margin: 0 2px 0 0;
+    float: left;
+    height: 80px;
+    line-height: 80px;
+    background-color: #fff;
+}
+
+.ordermanagement .Obody .Obody-nav .number,
+.Obody-body .Morder .number {
+    border-radius: 20px;
+    margin: 0px 20px;
+    font-size: 20px;
+    text-align: center;
+    width: 50px;
+}
+
+.ordermanagement .Obody .Obody-body .Morder .number {
+    border-radius: 4px;
+}
+
+.ordermanagement .Obody .Obody-nav .orderId,
+.Obody-body .Morder .orderId {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 270px;
+}
+
+.ordermanagement .Obody .Obody-nav .orderemail,
+.Obody-body .Morder .orderemail {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 270px;
+}
+
+.ordermanagement .Obody .Obody-nav .ordertime,
+.Obody-body .Morder .ordertime {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 180px;
+}
+
+.ordermanagement .Obody .Obody-nav .proName,
+.Obody-body .Morder .proName {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 170px;
+}
+
+.ordermanagement .Obody .Obody-nav .proCount,
+.Obody-body .Morder .proCount {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 90px;
+}
+
+
+
+.ordermanagement .Obody .Obody-nav .countMoney,
+.Obody-body .Morder .countMoney {
+    font-size: 20px;
+    padding: 0 0 0 10px;
+    width: 110px;
+}
+
+.ordermanagement .Obody .Obody-nav .status,
+.Obody-body .Morder .status {
+    font-size: 20px;
+    text-align: center;
+    width: 110px;
+}
+
+.ordermanagement .Obody .Obody-nav .sendAll,
+.Obody-body .Morder .send {
+    font-weight: 700;
+    border-radius: 20px;
+    height: 80px;
+    line-height: 80px;
+    border: 0;
+    background-color: white;
+    font-size: 20px;
+    text-align: center;
+    margin: 0 0 5px 0;
+    width: 100px;
+    transition: color.3s;
+}
+
+.ordermanagement .Obody .Obody-body .Morder .send:hover,
+.Obody-nav .sendAll:hover {
+    color: orange;
+}
+
+.ordermanagement .Onav label {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.ordermanagement .Onav #selectpro {
+    display: inline;
+    width: 180px;
+    height: 40px;
+    padding: 0px 5px;
+    margin: 0px 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease,
+        box-shadow 0.3s ease;
+    outline: none;
+}
+
+.ordermanagement .Onav #selectpro:focus {
+    border-color: #07faad;
+    box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}

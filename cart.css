@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.nav {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #f5f5f5;
+    text-align: center;
+    margin: 0px auto;
+    z-index: 1000;
+    top: 0;
+    /* 距离页面顶部0像素 */
+    left: 0;
+    /* 距离页面左侧0像素 */
+}
+
+.nav .backindex,
+.usermoney {
+    border: 0;
+    float: left;
+    margin: 10px 5px;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: black;
+    transition: color.3s;
+}
+
+.nav .logout,
+.cart,
+.order {
+    text-align: center;
+    border: 0;
+    float: right;
+    margin: 10px 5px;
+    background-color: #f5f5f5;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: black;
+    transition: color.3s;
+}
+
+.nav .cart img {
+    height: 20px;
+}
+
+
+.nav .backindex:hover {
+    color: orange;
+}
+
+.nav .logout:hover {
+    color: orange;
+}
+
+.nav .order:hover {
+    color: orange;
+}
+
+
+.cartbody .add,
+.cartbody .reduce,
+.cartbody .delete span {
+    cursor: pointer;
+}
+
+.cartbox {
+    margin: 0 auto;
+    width: 1800px;
+}
+
+.carthead {
+    background-color: #f5f5f5;
+    width: 1250px;
+    margin: 100px 0 0 100px;
+    height: 50px;
+
+}
+
+.carthead div {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    width: 200px;
+    float: left;
+    border-bottom: 2px solid rgba(243, 238, 238, 0.919);
+}
+
+.carthead div.selectAll {
+    width: 40px;
+}
+
+.cartbody {
+    float: left;
+    margin: 0 0 0 100px;
+    width: 1250px;
+    background-color: white;
+}
+
+.cartbody .product {
+    width: 100%;
+    height: 212px;
+    transition: box-shadow.3s;
+}
+
+.cartbody .product:hover {
+    box-shadow: 0 0 4px 4px #7ee5fa;
+}
+
+.cartbody .product div {
+    margin: 5px 0 5px 0;
+    height: 200px;
+    border-bottom: 2px solid rgba(243, 238, 238, 0.919);
+    float: left;
+}
+
+.cartbody .product .select {
+    width: 40px;
+    text-align: center;
+    line-height: 200px;
+
+}
+
+.cartbody .product .select input {
+    width: 30px;
+}
+
+.cartbody .product .proImg {
+    width: 200px;
+}
+
+.cartbody .product .proImg img {
+    padding: 2.5px 0 0 2.5px;
+    border-radius: 20px;
+    height: 190px;
+}
+
+.cartbody .product .proName,
+.proPrice,
+.add-reduce,
+.countMoney {
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+}
+
+
+.cartbody .product .add-reduce div {
+    border: 2px solid rgba(243, 238, 238, 0.919);
+    border-radius: 14px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.cartbody .product .add-reduce .add {
+
+    transition: border 0.5s;
+    margin: 85px 10px 0 6px;
+}
+
+.cartbody .product .add-reduce .add:hover {
+    border: 2px solid rgba(61, 45, 246, 0.919);
+}
+
+.cartbody .product .add-reduce .proCount {
+    width: 70px;
+    margin: 85px 0px 0 0px;
+}
+
+.cartbody .product .add-reduce .reduce {
+    transition: border 0.5s;
+    margin: 85px 10px 0 6px;
+}
+
+.cartbody .product .add-reduce .reduce:hover {
+    border: 2px solid rgba(61, 45, 246, 0.919);
+}
+
+.cartbody .product .delete {
+    width: 200px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 20px;
+}
+
+.cartbody .product .delete span:hover {
+    color: red;
+}
+
+.buybox {
+    border: 2px solid rgba(243, 238, 238, 0.919);
+    border-radius: 30px;
+    float: right;
+    width: 400px;
+    height: 350px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+
+.buybox .buyhead {
+    padding: 20px 0 0 20px;
+    width: 100%;
+    height: 50px;
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+.buybox .buybody {
+    padding: 40px 0 0 20px;
+    width: 100%;
+    height: 150px;
+    font-size: 30px;
+    line-height: 50px;
+
+}
+
+.buybox .buyfoot {
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    margin: 0px 50px;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 700;
+    background-color: orange;
+    transition: background-color 0.5s ease;
+}
+
+.buybox .buyfoot:hover {
+    background-color: #ff5000;
+}
