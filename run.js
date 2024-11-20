@@ -201,8 +201,8 @@ let transporter = nodemailer.createTransport({
     port: 465,            // QQ 邮箱的 SMTP 端口（SSL 端口）
     secure: true,         // 使用 SSL
     auth: {
-        user: '2291417732@qq.com',   // 你的 QQ 邮箱地址
-        pass: 'efjtruisqlmhdijb',  // QQ 邮箱的授权码
+        user: '',   // QQ 邮箱地址
+        pass: '',  // QQ 邮箱的授权码
     }
 });
 // 生成6位随机验证码
